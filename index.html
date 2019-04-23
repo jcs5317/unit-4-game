@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <h1 class="text-center">Crystal Game!</h1>
+    <div class=placeholder>
+        <ul>
+            <h2>Instructions</h2>
+            <li>Match the "Target" number below using the hidden values of the four crystals below.
+            </li>
+            <li>Click a crystal to add each of the values to the "Score."
+            </li>
+            <li> Player wins by matching the score with target amount.
+                <br>
+                Player losses by score going over the target amount.
+            </li>
+            <li>Remeber: Although the point value of each Crystal is hidden, the value can be determined by tracking the score difference after each player click.
+            </li>
+            <li>Also each time the game starts, the values of each Crystal changes.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p>Wins: <span id="wins">0</span></p>
+        <div>
+            <p>Losses: <span id="losses">0</span></p>
+        </div>
+        <div id="game">
+            <div>Target: <span id="target">0</span></div>
+            <div>Score: <span id="score">0</span></div>
+            <div class="gem-group">
+                <div row>
+                <div col-md-12>
+                <img src="assets/images/blueGem.png" class="crystal1">
+                <img src="assets/images/purpleGem.png" class="crystal2">
+                <img src="assets/images/redGem.png" class="crystal3">
+                <img src="assets/images/yellowGem.png" class="crystal4">
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
